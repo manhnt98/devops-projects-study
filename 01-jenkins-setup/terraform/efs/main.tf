@@ -1,9 +1,10 @@
 provider "aws" {
-  region = "us-west-2"
+  profile = "jenkins_ha"
+  region = "us-east-1"
 }
 
 module "efs_module" {
   source = "../modules/efs"
-  vpc_id     = "vpc-0a5ca4a92c2e10163"
-  subnet_ids = ["subnet-058a7514ba8adbb07", "subnet-0dbcd1ac168414927", "subnet-032f5077729435858"]
+  vpc_id     = "vpc-09e5e5d35e75df7bc"
+  subnet_ids = ["subnet-0755c5b9d5ced7842", "subnet-07ea2dc8a0c7a34d3", "subnet-0d916b3b2a20a0e89"]
 }

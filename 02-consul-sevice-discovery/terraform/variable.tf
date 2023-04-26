@@ -6,7 +6,7 @@ variable "instance_type" {
  variable "region" {
    type = string
    description = "The project region"
-   default = "us-west-2"
+   default = "us-east-1"
  }
 
 variable "ami" {

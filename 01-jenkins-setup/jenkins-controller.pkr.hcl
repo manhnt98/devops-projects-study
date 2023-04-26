@@ -15,8 +15,8 @@ locals {
 source "amazon-ebs" "jenkins" {
   ami_name      = "${local.app_name}"
   instance_type = "t2.micro"
-  region        = "us-west-2"
-  availability_zone = "us-west-2a"
+  region        = "us-east-1"
+  availability_zone = "us-east-1a"
   source_ami    = "${var.ami_id}"
   ssh_username  = "ubuntu"
   tags = {

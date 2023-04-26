@@ -1,5 +1,6 @@
 provider "aws" {
-  region = "us-west-2"
+  profile = "jenkins_ha"
+  region = "us-east-1"
 }
 
 module "jenkins_iam" {

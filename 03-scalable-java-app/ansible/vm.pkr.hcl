@@ -10,7 +10,7 @@ locals {
 source "amazon-ebs" "nginx" {
   ami_name      = "PACKER-${local.app_name}"
   instance_type = "t2.micro"
-  region        = "us-west-2"
+  region        = "us-east-1"
   source_ami    = "${var.ami_id}"
   ssh_username  = "ubuntu"
   tags = {

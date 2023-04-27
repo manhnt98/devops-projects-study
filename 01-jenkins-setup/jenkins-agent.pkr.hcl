@@ -13,6 +13,7 @@ locals {
 }
 
 source "amazon-ebs" "jenkins" {
+  profile = "jenkins_ha"
   ami_name      = "${local.app_name}"
   instance_type = "t2.micro"
   region        = "us-east-1"

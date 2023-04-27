@@ -26,7 +26,7 @@ Other parameters are common or AWS oregon region with default VPC. If you are us
 ```
 instance_type      =   "t2.micro"
 region             =   "us-east-1"
-ami                =   "ami-0735c191cf914754d"
+ami                =   "ami-007855ac798b5175e"
 key_name           =   "techiescamp"
 ingress_cidr_block =   "172.31.0.0/16"
 ```

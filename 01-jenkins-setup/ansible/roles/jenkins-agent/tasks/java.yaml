@@ -3,7 +3,7 @@
   apt:
     update_cache: yes
 
-- name: Install Java JDK 17
+- name: Install Java JDK 11
   apt:
-    name: openjdk-17-jdk
+    name: openjdk-11-jdk
     state: present

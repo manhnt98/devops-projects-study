@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
 variable "instance_name" {
   type = string
   default = "live-test-instance"
